@@ -1,5 +1,6 @@
 window.axios = require('axios');
 window.handlebars = require('handlebars');
+const _ = require('lodash');
 
 const client = axios.create({
     baseURL: "/"
@@ -10,10 +11,9 @@ var $container = $('.tiles'),
 
 client.get('js/orgs.json')
     .then(response => {
-        // create a box for each
-        console.log(response.data);
+        const orgs = _.sortBy(response.data, 'name');
 
-        response.data.forEach(org => {
+        orgs.forEach(org => {
             org.num = getRandomInt(1, 15);
             org.paddedNum = padToTwo(org.num);
             $container.append(template(org));

@@ -2,6 +2,9 @@
     {
         "name": "#StayWokeTech",
         "url": "http://staywokeorg.github.io",
-        "description": "The tech arm of #StayWoke"
+        "description": "The tech arm of #StayWoke",
+        "locationAddress": null,
+        "locationCity": null,
+        "locationState": null
     }
 ]
