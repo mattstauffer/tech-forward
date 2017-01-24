@@ -11,5 +11,4 @@ All of the organizations are present in `public/js/orgs.json`; just add yours an
 * [ ] Add optional address/city/state to each organization
 * [ ] Add some content or qualifiers for who should be in here
 * [ ] Add installation/serving instructions
-* [ ] Make a log
 * [ ] Make an about page so people aren't as skeptical
