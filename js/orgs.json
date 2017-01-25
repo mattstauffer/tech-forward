@@ -25,5 +25,14 @@
         "locationCity": null,
         "locationState": null,
         "customImage": null
+    },
+    {
+        "name": "Ragtag",
+        "url": "https://ragtag.team",
+        "description": "tech-generation volunteers & activists",
+        "locationAddress": null,
+        "locationCity": null,
+        "locationState": null,
+        "customImage": null
     }
 ]
