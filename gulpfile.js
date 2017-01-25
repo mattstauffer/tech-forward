@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 
-elixir.config.assetsPath = 'source';
-elixir.config.publicPath = 'public';
+elixir.config.assetsPath = '_source';
+elixir.config.publicPath = './';
 
 elixir(function(mix) {
     mix.sass('main.scss');
@@ -13,7 +13,7 @@ elixir(function(mix) {
                 'phantom/util.js',
                 'phantom/phantom.js'
             ],
-            'public/js/phantom.js'
+            'js/phantom.js'
         );
     mix.browserify('app.js');
 });
