@@ -2,9 +2,7 @@ window.axios = require('axios');
 window.handlebars = require('handlebars');
 const _ = require('lodash');
 
-const client = axios.create({
-    baseURL: "/"
-});
+const client = axios.create({});
 
 var $container = $('.tiles'),
     template = handlebars.compile($('#org-template').html());
