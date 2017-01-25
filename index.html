@@ -29,6 +29,23 @@
                 </a>
             </article>
         </script>
+        <script id="tool-template" type="text/x-handlebars-template">
+            <article class="style{{ styleNum }}">
+                <span class="image">
+                    {{#if customImage}}
+                    <img src="{{ customImage }}" alt="{{ name }}">
+                    {{else}}
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}">
+                    {{/if}}
+                </span>
+                <a href="{{ url }}">
+                    <h2>{{ name }}</h2>
+                    <div class="content">
+                        <p>{{ description }}</p>
+                    </div>
+                </a>
+            </article>
+        </script>
     </head>
     <body>
         <!-- Wrapper -->
@@ -77,8 +94,15 @@
                             <!--
                             <p>Working in parallel towards the same goal. Something catchy here.</p>
                             -->
+                            <a href="#orgs">Organizations</a> | <a href="#tools">Tools</a>
                         </header>
-                        <section class="tiles"></section>
+                        <br><br><br><br>
+                        <h2 id="orgs">Organizations</h2>
+                        <section class="tiles tiles--orgs"></section>
+
+                        <br><br><br><br>
+                        <h2 id="tools">Tools</h2>
+                        <section class="tiles tiles--tools"></section>
                     </div>
                 </div>
 

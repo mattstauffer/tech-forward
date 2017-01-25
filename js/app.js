@@ -7,14 +7,24 @@ var _ = require('lodash');
 
 var client = axios.create({});
 
-var $container = $('.tiles'),
-    template = handlebars.compile($('#org-template').html());
+var $orgsContainer = $('.tiles--orgs'),
+    $toolsContainer = $('.tiles--tools'),
+    orgTemplate = handlebars.compile($('#org-template').html()),
+    toolTemplate = handlebars.compile($('#tool-template').html());
 
 client.get('js/orgs.json').then(function (response) {
     var orgs = _.sortBy(response.data, 'name');
 
     orgs.forEach(function (org) {
-        $container.append(template(decorateOrg(org)));
+        $orgsContainer.append(orgTemplate(decorateOrg(org)));
+    });
+});
+
+client.get('js/tools.json').then(function (response) {
+    var tools = _.sortBy(response.data, 'name');
+
+    tools.forEach(function (tool) {
+        $toolsContainer.append(toolTemplate(decorateTool(tool)));
     });
 });
 
@@ -24,6 +34,13 @@ function decorateOrg(org) {
     org.location = buildLocationString(org);
 
     return org;
+}
+
+function decorateTool(tool) {
+    tool.imageNum = padToTwo(getRandomInt(1, 15));
+    tool.styleNum = tool.customImage ? 9999 : getRandomInt(1, 6);
+
+    return tool;
 }
 
 function buildLocationString(org) {
