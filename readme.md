@@ -6,8 +6,8 @@ All of the organizations are present in `public/js/orgs.json`; just add yours an
 
 ## To-do
 
-* [ ] Add optional address/city/state to each organization
+* [x] Add optional address/city/state to each organization
 * [ ] Add some content or qualifiers for who should be in here
 * [ ] Add installation/serving instructions
-* [ ] Make a log
-* [ ] Make an about page so people aren't as skeptical
+* [ ] Make an about note so people aren't as skeptical
+* [ ] Handle multi-location (e.g. Tech Solidarity)

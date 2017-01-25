@@ -26836,11 +26836,33 @@ client.get('js/orgs.json').then(function (response) {
     var orgs = _.sortBy(response.data, 'name');
 
     orgs.forEach(function (org) {
-        org.num = getRandomInt(1, 15);
-        org.paddedNum = padToTwo(org.num);
-        $container.append(template(org));
+        $container.append(template(decorateOrg(org)));
     });
 });
+
+function decorateOrg(org) {
+    org.imageNum = padToTwo(getRandomInt(1, 15));
+    org.styleNum = org.customImage ? 9999 : getRandomInt(1, 6);
+    org.location = buildLocationString(org);
+
+    return org;
+}
+
+function buildLocationString(org) {
+    if (org.locationAddress && org.locationCity && org.locationState) {
+        return org.locationAddress + ', ' + org.locationCity + ', ' + org.locationState;
+    }
+
+    if (org.locationCity && org.locationState) {
+        return org.locationCity + ', ' + org.locationState;
+    }
+
+    if (org.locationState) {
+        return org.locationState;
+    }
+
+    return null;
+}
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;

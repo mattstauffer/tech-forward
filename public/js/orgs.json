@@ -5,6 +5,25 @@
         "description": "The tech arm of #StayWoke",
         "locationAddress": null,
         "locationCity": null,
-        "locationState": null
+        "locationState": null,
+        "customImage": null
+    },
+    {
+        "name": "Progressive Coders Network",
+        "url": "http://progcode.co",
+        "description": "We're building a network of tech volunteers and together we're creating open-source tools for the progressive movement",
+        "locationAddress": null,
+        "locationCity": null,
+        "locationState": null,
+        "customImage": "https://d3vv6lp55qjaqc.cloudfront.net/items/201O0q351C0C0E131P2o/prog-code-bg.jpg"
+    },
+    {
+        "name": "Tech Solidarity",
+        "url": "http://techsolidarity.org",
+        "description": "Our goal is to discuss constructive ways we can prepare for a Trump administration, and what we could do locally and in the companies we work for to mitigate some of his anticipated policies.",
+        "locationAddress": null,
+        "locationCity": null,
+        "locationState": null,
+        "customImage": null
     }
 ]

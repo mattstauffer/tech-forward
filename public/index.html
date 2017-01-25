@@ -10,14 +10,21 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
         <script id="org-template" type="text/x-handlebars-template">
-            <article class="style{{ num }}">
+            <article class="style{{ styleNum }}">
                 <span class="image">
-                    <img src="images/pic{{ paddedNum }}.jpg" alt="">
+                    {{#if customImage}}
+                    <img src="{{ customImage }}" alt="{{ name }}">
+                    {{else}}
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}">
+                    {{/if}}
                 </span>
                 <a href="{{ url }}">
                     <h2>{{ name }}</h2>
                     <div class="content">
                         <p>{{ description }}</p>
+                        {{#if location}}
+                        <p>LOCATION: {{ location }}</p>
+                        {{/if}}
                     </div>
                 </a>
             </article>
@@ -101,11 +108,11 @@
                                 <h2>Follow</h2>
                                 <ul class="icons">
                                     <li><a href="https://twitter.com/staywoke" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="https://github.com/staywokeorg/tech-forward" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
                                     <!--
                                     <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
                                     <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
                                     <li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-                                    <li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
                                     <li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
                                     <li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
                                     <li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
@@ -113,7 +120,9 @@
                                 </ul>
                             </section>
                             <ul class="copyright">
-                                <li>&copy; <a href="http://staywoke.org/">StayWoke</a>. MIT License.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>&copy; <a href="http://staywoke.org/">#StayWoke</a>. MIT License.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>Open source: <a href="https://github.com/staywokeorg/tech-forward">GitHub</a>
                             </ul>
                         </div>
                     </footer>
