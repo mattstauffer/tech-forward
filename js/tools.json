@@ -10,5 +10,11 @@
         "url": "https://5calls.org/",
         "description": "Issues, scripts and your representatives all in one place. Spend 5 minutes and make your voice heard",
         "customImage": "./images/logos/5calls.jpg"
+    },
+    {
+        "name": "Swing Left",
+        "url": "https://swingleft.org/",
+        "description": "Find your closest Swing District and join its team to learn about actionable opportunities to support progressives—and defeat Republicans—in that district, no matter where you live.",
+        "customImage": null 
     }
 ]
