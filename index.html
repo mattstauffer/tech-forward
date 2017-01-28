@@ -2,49 +2,75 @@
 <html>
     <head>
         <title>Tech Forward</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="css/main.css" />
-        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css"><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
 
         <script id="org-template" type="text/x-handlebars-template">
-            <article class="style{{ styleNum }}">
-                <span class="image">
+            <div class="media" id="org-{{ slug }}">
+                <a href="{{ url }}" class="media-figure">
                     {{#if customImage}}
-                    <img src="{{ customImage }}" alt="{{ name }}">
+                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
                     {{else}}
-                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}">
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
                     {{/if}}
-                </span>
-                <a href="{{ url }}">
-                    <h2>{{ name }}</h2>
-                    <div class="content">
-                        <p>{{ description }}</p>
-                        {{#if location}}
-                        <p>LOCATION: {{ location }}</p>
-                        {{/if}}
-                    </div>
                 </a>
-            </article>
+
+                <div class="media-body">
+                    <a href="{{ url }}"><h3>{{ name }}</h3></a>
+                    <p>{{ description }}</p>
+                    {{#if location}}
+                    <p>LOCATION: {{ location }}</p>
+                    {{/if}}
+
+                    <a href="{{ joinUrl }}" class="button small">Join</a>
+                </div>
+            </div>
+
+            <hr>
         </script>
         <script id="tool-template" type="text/x-handlebars-template">
-            <article class="style{{ styleNum }}">
-                <span class="image">
+            <div class="media">
+                <a href="{{ url }}" class="media-figure">
                     {{#if customImage}}
-                    <img src="{{ customImage }}" alt="{{ name }}">
+                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
                     {{else}}
-                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}">
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
                     {{/if}}
-                </span>
-                <a href="{{ url }}">
-                    <h2>{{ name }}</h2>
-                    <div class="content">
-                        <p>{{ description }}</p>
-                    </div>
                 </a>
-            </article>
+
+                <div class="body media-body">
+                    <a href="{{ url }}"><h3>{{ name }}</h3></a>
+                    <p>{{ description }}</p>
+                    {{#if builtBy}}
+                    <p>BUILT BY: <a href="{{ builtBy.url }}">{{ builtBy.text }}</a></p>
+                    {{/if}}
+                </div>
+            </div>
+
+            <hr>
+        </script>
+        <script id="resource-template" type="text/x-handlebars-template">
+            <div class="media">
+                <a href="{{ url }}" class="media-figure">
+                    {{#if customImage}}
+                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
+                    {{else}}
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
+                    {{/if}}
+                </a>
+
+                <div class="media-body">
+                    <a href="{{ url }}"><h3>{{ name }}</h3></a>
+                    <p>{{ description }}</p>
+                </div>
+            </div>
+
+            <hr>
         </script>
     </head>
     <body>
@@ -94,15 +120,19 @@
                             <!--
                             <p>Working in parallel towards the same goal. Something catchy here.</p>
                             -->
-                            <a href="#orgs">Organizations</a> | <a href="#tools">Tools</a>
+                            <a href="#orgs">Organizations</a> | <a href="#tools">Tools</a> | <a href="#resources">Resources</a>
                         </header>
-                        <br><br><br><br>
+                        <br><br>
                         <h2 id="orgs">Organizations</h2>
-                        <section class="tiles tiles--orgs"></section>
+                        <section class="container--orgs"></section>
 
-                        <br><br><br><br>
+                        <br><br>
                         <h2 id="tools">Tools</h2>
-                        <section class="tiles tiles--tools"></section>
+                        <section class="container--tools"></section>
+
+                        <br><br>
+                        <h2 id="resources">Resources</h2>
+                        <section class="container--resources"></section>
                     </div>
                 </div>
 
@@ -114,16 +144,16 @@
                                 <h2>Get in touch</h2>
                                 <form method="post" action="#">
                                     <div class="field half first">
-                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                        <input type="text" name="name" id="name" placeholder="Name">
                                     </div>
                                     <div class="field half">
-                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                        <input type="email" name="email" id="email" placeholder="Email">
                                     </div>
                                     <div class="field">
                                         <textarea name="message" id="message" placeholder="Message"></textarea>
                                     </div>
                                     <ul class="actions">
-                                        <li><input type="submit" value="Send" class="special" /></li>
+                                        <li><input type="submit" value="Send" class="special"></li>
                                     </ul>
                                 </form>
                                 -->

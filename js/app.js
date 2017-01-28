@@ -7,10 +7,12 @@ var _ = require('lodash');
 
 var client = axios.create({});
 
-var $orgsContainer = $('.tiles--orgs'),
-    $toolsContainer = $('.tiles--tools'),
+var $orgsContainer = $('.container--orgs'),
+    $toolsContainer = $('.container--tools'),
+    $resourcesContainer = $('.container--resources'),
     orgTemplate = handlebars.compile($('#org-template').html()),
-    toolTemplate = handlebars.compile($('#tool-template').html());
+    toolTemplate = handlebars.compile($('#tool-template').html()),
+    resourceTemplate = handlebars.compile($('#resource-template').html());
 
 client.get('js/orgs.json').then(function (response) {
     var orgs = _.sortBy(response.data, 'name');
@@ -28,8 +30,17 @@ client.get('js/tools.json').then(function (response) {
     });
 });
 
+client.get('js/resources.json').then(function (response) {
+    var resources = _.sortBy(response.data, 'name');
+
+    resources.forEach(function (resource) {
+        $resourcesContainer.append(resourceTemplate(decorateResource(resource)));
+    });
+});
+
 function decorateOrg(org) {
-    org.imageNum = padToTwo(getRandomInt(1, 15));
+    org.slug = slugify(org.name);
+    org.imageNum = padToTwo(getRandomInt(1, 9));
     org.styleNum = org.customImage ? 9999 : getRandomInt(1, 6);
     org.location = buildLocationString(org);
 
@@ -37,10 +48,19 @@ function decorateOrg(org) {
 }
 
 function decorateTool(tool) {
-    tool.imageNum = padToTwo(getRandomInt(1, 15));
+    tool.slug = slugify(tool.name);
+    tool.imageNum = padToTwo(getRandomInt(1, 9));
     tool.styleNum = tool.customImage ? 9999 : getRandomInt(1, 6);
 
     return tool;
+}
+
+function decorateResource(resource) {
+    resource.slug = slugify(resource.name);
+    resource.imageNum = padToTwo(getRandomInt(1, 9));
+    resource.styleNum = resource.customImage ? 9999 : getRandomInt(1, 6);
+
+    return resource;
 }
 
 function buildLocationString(org) {
@@ -68,6 +88,11 @@ function padToTwo(number) {
         number = ("0" + number).slice(-2);
     }
     return number;
+}
+
+function slugify(string) {
+    return string.toString().toLowerCase().trim().replace(/&/g, '-and-') // Replace & with 'and'
+    .replace(/[\s\W-]+/g, '-'); // Replace spaces, non-word characters and dashes with a single dash (-)
 }
 
 },{"axios":3,"handlebars":58,"lodash":70}],2:[function(require,module,exports){

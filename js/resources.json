@@ -1,0 +1,20 @@
+[
+    {
+        "name": "More than Votes",
+        "url": "http://www.morethanvotes.com/",
+        "description": "Sometimes voting isn't enough. Find your local city or county meetings. Show up.",
+        "customImage": null
+    },
+    {
+        "name": "Swing Left",
+        "url": "https://swingleft.org/",
+        "description": "Find your closest Swing District and join its team to learn about actionable opportunities to support progressives—and defeat Republicans—in that district, no matter where you live.",
+        "customImage": null
+    },
+    {
+        "name": "5Calls",
+        "url": "https://5calls.org/",
+        "description": "Spend 5 minutes, make 5 calls. There's one simple and straightforward way to influence the Government that is supposed to represent you: Call them on the phone. Calling is the most effective way to influence your representative. 5 Calls gives you contacts and scripts so calling is quick and easy. We use your location to give you your local representatives so your calls are more impactful.",
+        "customImage": null
+    }
+]

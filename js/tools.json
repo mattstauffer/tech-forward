@@ -3,18 +3,40 @@
         "name": "Action Inbox",
         "url": "https://gomix.com/#!/project/action-inbox",
         "description": "I wish I could see all of the calls to action from orgs i support in one app/dashboard rather than as dozens of separate emails.",
-        "customImage": null
+        "customImage": null,
+        "builtBy": {
+            "text": null,
+            "url": null
+        }
     },
     {
-        "name": "5 Calls",
-        "url": "https://5calls.org/",
-        "description": "Issues, scripts and your representatives all in one place. Spend 5 minutes and make your voice heard",
-        "customImage": "./images/logos/5calls.jpg"
+        "name": "HillaryBNB",
+        "url": "https://github.com/DevProgress/HillaryBNB",
+        "description": "We want to build an app to allow supporters to share their homes with others from out of town and to help supporters on the road find lodging.",
+        "customImage": null,
+        "builtBy": {
+            "text": "DevProgress",
+            "url": "#org-devprogress"
+        }
     },
     {
-        "name": "Swing Left",
-        "url": "https://swingleft.org/",
-        "description": "Find your closest Swing District and join its team to learn about actionable opportunities to support progressives—and defeat Republicans—in that district, no matter where you live.",
-        "customImage": null 
+        "name": "Nomad",
+        "url": "https://github.com/DevProgress/HillaryBNB",
+        "description": "Nomad is a web app for arranging long-distance carpools for supporters and activists, which was used to great success during the Hillary 2016 campaign.",
+        "customImage": null,
+        "builtBy": {
+            "text": "DevProgress",
+            "url": "#org-devprogress"
+        }
+    },
+    {
+        "name": "NeverAgain Pledge",
+        "url": "https://github.com/DevProgress/HillaryBNB",
+        "description": "NeverAgain is the pledge signed by technologists around the country who are pledging to refuse to build a database of people based on their Constitutionally-protected religious beliefs. The refuse to facilitate mass deportations of people the government believes to be undesirable. The pledge is no longer accepting individual signatories.",
+        "customImage": null,
+        "builtBy": {
+            "text": "Tech Solidarity",
+            "url": "#org-techsolidarity"
+        }
     }
 ]

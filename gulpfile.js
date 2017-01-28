@@ -6,14 +6,15 @@ elixir.config.publicPath = './';
 
 elixir(function(mix) {
     mix.sass('main.scss');
+    mix.sass('custom.scss');
     mix.scripts(
-            [
-                'phantom/jquery.min.js',
-                'phantom/skel.min.js',
-                'phantom/util.js',
-                'phantom/phantom.js'
-            ],
-            'js/phantom.js'
-        );
+        [
+            'phantom/jquery.min.js',
+            'phantom/skel.min.js',
+            'phantom/util.js',
+            'phantom/phantom.js'
+        ],
+        'js/phantom.js'
+    );
     mix.browserify('app.js');
 });

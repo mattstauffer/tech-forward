@@ -1,0 +1,21 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-figure {
+  margin-right: 1em;
+}
+
+.media-body {
+  flex: 1;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.media-body h3 {
+    margin-bottom: 0;
+    letter-spacing: 0.2em;
+}
