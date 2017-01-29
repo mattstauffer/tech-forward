@@ -1,14 +1,14 @@
 .media {
-  display: flex;
-  align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
 }
 
 .media-figure {
-  margin-right: 1em;
+    margin-right: 1em;
 }
 
 .media-body {
-  flex: 1;
+    flex: 1;
 }
 
 h2 {
@@ -24,4 +24,9 @@ h2 {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.item-logo {
+    border: 1px solid #ccc;
+    width: 100px;
 }

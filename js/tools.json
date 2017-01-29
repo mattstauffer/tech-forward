@@ -2,8 +2,8 @@
     {
         "name": "Action Inbox",
         "url": "https://gomix.com/#!/project/action-inbox",
-        "description": "I wish I could see all of the calls to action from orgs i support in one app/dashboard rather than as dozens of separate emails.",
-        "customImage": null,
+        "description": "\"I wish I could see all of the calls to action from orgs I support in one app/dashboard rather than as dozens of separate emails.\"",
+        "customImage": "./images/logos/action-inbox.png",
         "builtBy": {
             "text": null,
             "url": null
@@ -13,7 +13,7 @@
         "name": "HillaryBNB",
         "url": "https://github.com/DevProgress/HillaryBNB",
         "description": "We want to build an app to allow supporters to share their homes with others from out of town and to help supporters on the road find lodging.",
-        "customImage": null,
+        "customImage": "./images/logos/hillary-bnb.png",
         "builtBy": {
             "text": "DevProgress",
             "url": "#org-devprogress"
@@ -21,9 +21,9 @@
     },
     {
         "name": "Nomad",
-        "url": "https://github.com/DevProgress/HillaryBNB",
+        "url": "https://github.com/DevProgress/nomad2016",
         "description": "Nomad is a web app for arranging long-distance carpools for supporters and activists, which was used to great success during the Hillary 2016 campaign.",
-        "customImage": null,
+        "customImage": "./images/logos/nomad.png",
         "builtBy": {
             "text": "DevProgress",
             "url": "#org-devprogress"
@@ -31,22 +31,12 @@
     },
     {
         "name": "NeverAgain Pledge",
-        "url": "https://github.com/DevProgress/HillaryBNB",
+        "url": "http://neveragain.tech/",
         "description": "NeverAgain is the pledge signed by technologists around the country who are pledging to refuse to build a database of people based on their Constitutionally-protected religious beliefs. The refuse to facilitate mass deportations of people the government believes to be undesirable. The pledge is no longer accepting individual signatories.",
-        "customImage": null,
+        "customImage": "./images/logos/never-again.png",
         "builtBy": {
             "text": "Tech Solidarity",
             "url": "#org-techsolidarity"
-        }
-    },
-    {
-        "name": "Resistance Manual",
-        "url": "https://resistancemanual.org",
-        "description": "Learn how to resist the Trump/GOP agenda and continue making progress in America at resistancemanual.org.",
-        "customImage": "./images/logos/resistance-manual.png",
-        "builtBy": {
-            "text": "#StayWokeTech",
-            "url": "#org--staywoketech"
         }
     }
 ]

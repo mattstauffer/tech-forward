@@ -7,7 +7,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": null
+        "customImage": "./images/logos/stay-woke.png"
     },
     {
         "name": "Progressive Coders Network",
@@ -17,7 +17,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": "https://d3vv6lp55qjaqc.cloudfront.net/items/201O0q351C0C0E131P2o/prog-code-bg.jpg"
+        "customImage": "./images/logos/progressive-coders-network.png"
     },
     {
         "name": "Tech Solidarity",
@@ -27,7 +27,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": null
+        "customImage": "./images/logos/tech-solidarity.png"
     },
     {
         "name": "Ragtag",
@@ -37,7 +37,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": null
+        "customImage": "./images/logos/ragtag.png"
     },
     {
         "name": "Code for America",
@@ -47,7 +47,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": null
+        "customImage": "./images/logos/code-for-america.png"
     },
     {
         "name": "DevProgress",
@@ -57,7 +57,7 @@
         "locationAddress": null,
         "locationCity": null,
         "locationState": null,
-        "customImage": null
+        "customImage": "./images/logos/dev-progress.png"
     },
     {
         "name": "Beta NYC",
@@ -67,6 +67,6 @@
         "locationAddress": null,
         "locationCity": "New York",
         "locationState": "NY",
-        "customImage": null
+        "customImage": "./images/logos/beta-nyc.png"
     }
 ]

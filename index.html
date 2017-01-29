@@ -14,9 +14,9 @@
             <div class="media" id="org-{{ slug }}">
                 <a href="{{ url }}" class="media-figure">
                     {{#if customImage}}
-                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
+                    <img src="{{ customImage }}" alt="{{ name }}" class="item-logo">
                     {{else}}
-                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" class="item-logo">
                     {{/if}}
                 </a>
 
@@ -37,9 +37,9 @@
             <div class="media">
                 <a href="{{ url }}" class="media-figure">
                     {{#if customImage}}
-                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
+                    <img src="{{ customImage }}" alt="{{ name }}" class="item-logo">
                     {{else}}
-                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" class="item-logo">
                     {{/if}}
                 </a>
 
@@ -58,15 +58,18 @@
             <div class="media">
                 <a href="{{ url }}" class="media-figure">
                     {{#if customImage}}
-                    <img src="{{ customImage }}" alt="{{ name }}" style="width: 100px">
+                    <img src="{{ customImage }}" alt="{{ name }}" class="item-logo">
                     {{else}}
-                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" style="width: 100px">
+                    <img src="images/pic{{ imageNum }}.jpg" alt="{{ name }}" class="item-logo">
                     {{/if}}
                 </a>
 
                 <div class="media-body">
                     <a href="{{ url }}"><h3>{{ name }}</h3></a>
                     <p>{{ description }}</p>
+                    {{#if builtBy}}
+                    <p>BUILT BY: <a href="{{ builtBy.url }}">{{ builtBy.text }}</a></p>
+                    {{/if}}
                 </div>
             </div>
 
@@ -122,14 +125,13 @@
                             -->
 
                         </header>
-<!--
                         <div class="intro">
                             <p>You've probably asked it. "I'm a technologist. I know I can work for change the same as everyone—call my senator, donate to the causes that matter, protest. But what can I <em>uniquely</em> do?"</p>
-                            <p>Something something about your unique ability that sets the stage for them to want to do all the stuff below</p>
+                            <!-- <p>Something something about your unique ability that sets the stage for them to want to do all the stuff below</p> -->
                         </div>
 
                         <hr>
--->
+
                         <a href="#orgs">Organizations</a> | <a href="#tools">Tools</a> | <a href="#resources">Resources</a>
 
 

@@ -23,4 +23,8 @@ h2 {
   margin-left: auto;
   margin-right: auto; }
 
+.item-logo {
+  border: 1px solid #ccc;
+  width: 100px; }
+
 /*# sourceMappingURL=custom.css.map */
