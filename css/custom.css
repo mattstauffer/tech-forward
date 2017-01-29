@@ -18,4 +18,9 @@ h2 {
   margin-bottom: 0;
   letter-spacing: 0.2em; }
 
+.intro {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=custom.css.map */

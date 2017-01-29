@@ -38,5 +38,15 @@
             "text": "Tech Solidarity",
             "url": "#org-techsolidarity"
         }
+    },
+    {
+        "name": "Resistance Manual",
+        "url": "https://resistancemanual.org",
+        "description": "Learn how to resist the Trump/GOP agenda and continue making progress in America at resistancemanual.org.",
+        "customImage": "./images/logos/resistance-manual.png",
+        "builtBy": {
+            "text": "#StayWokeTech",
+            "url": "#org--staywoketech"
+        }
     }
 ]
