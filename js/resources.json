@@ -26,5 +26,11 @@
             "text": "#StayWokeTech",
             "url": "#org--staywoketech"
         }
+    },
+    {
+        "name": "NeverAgain Pledge",
+        "url": "http://neveragain.tech/",
+        "description": "NeverAgain is the pledge signed by technologists around the country who are pledging to refuse to build a database of people based on their Constitutionally-protected religious beliefs. The refuse to facilitate mass deportations of people the government believes to be undesirable. The pledge is no longer accepting individual signatories.",
+        "customImage": "./images/logos/never-again.png"
     }
 ]

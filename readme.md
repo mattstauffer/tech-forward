@@ -13,3 +13,6 @@ All of the organizations are present in `js/orgs.json` and all of the tools are 
 * [ ] Add some content or qualifiers for who should be in here
 * [ ] Add installation/serving instructions
 * [ ] Handle multi-location (e.g. Tech Solidarity)
+* [ ] Show skills for tools
+* [ ] Get real intro content that is compelling
+* [ ] Build a "what's best for me" tool

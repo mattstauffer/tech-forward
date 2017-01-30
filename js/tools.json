@@ -7,7 +7,16 @@
         "builtBy": {
             "text": null,
             "url": null
-        }
+        },
+        "skills": [
+            "design",
+            "node",
+            "express",
+            "javascript",
+            "ui-ux",
+            "gomix"
+        ],
+        "underActiveDevelopment": true
     },
     {
         "name": "HillaryBNB",
@@ -17,7 +26,13 @@
         "builtBy": {
             "text": "DevProgress",
             "url": "#org-devprogress"
-        }
+        },
+        "skills": [
+            "ruby",
+            "rails",
+            "coffeescript",
+        ],
+        "underActiveDevelopment": false
     },
     {
         "name": "Nomad",
@@ -27,16 +42,10 @@
         "builtBy": {
             "text": "DevProgress",
             "url": "#org-devprogress"
-        }
-    },
-    {
-        "name": "NeverAgain Pledge",
-        "url": "http://neveragain.tech/",
-        "description": "NeverAgain is the pledge signed by technologists around the country who are pledging to refuse to build a database of people based on their Constitutionally-protected religious beliefs. The refuse to facilitate mass deportations of people the government believes to be undesirable. The pledge is no longer accepting individual signatories.",
-        "customImage": "./images/logos/never-again.png",
-        "builtBy": {
-            "text": "Tech Solidarity",
-            "url": "#org-techsolidarity"
-        }
+        },
+        "skills": [
+            "javascript"
+        ],
+        "underActiveDevelopment": false
     }
 ]
